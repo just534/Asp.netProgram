@@ -1,0 +1,464 @@
+﻿/*公共样式区域*/
+/*[1]确定版心*/
+
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    font-size: 16px;
+}
+
+ul {
+    list-style: none; /*ul标签没有小圆点*/
+}
+
+a {
+    text-decoration: none; /*去掉a标签的下划线*/
+}
+/*[2]清除内外边距*/
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+/*header样式部分*/
+header, nav {
+    display: block; /*块级元素*/
+}
+
+header {
+    height: 64px;
+    padding: 28px 0;
+}
+
+.logo {
+    width: 292px;
+    height: 64px;
+    float: left;
+}
+
+    .logo a {
+        display: block;
+        width: 292px;
+        height: 64px;
+        background: url(../img/logo.png);
+    }
+
+.tel_nav {
+    width: 908px;
+    height: 80px;
+    float: right;
+    position: relative; /*子元素开启绝对定位那么父元素就要开启相对定位*/
+}
+
+.tel {
+    width: 198px;
+    height: 25px;
+    position: absolute;
+    right: 0;
+    background: url(../img/tel_03.png) no-repeat;
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+    nav ul li { /*修改nav下面的ul下面的li标签样式*/
+        float: left;
+        margin-left: 50px;
+    }
+
+        nav ul li a { /*修改nav下面的ul下面的li下面的a标签样式*/
+            color: #333333;
+        }
+
+            nav ul li a:hover { /*修改nav下面的ul下面的li下面的a标签样式*/
+                color: #d71718;
+            }
+/*banner样式部分开始*/
+.banner {
+    width: 100%;
+    height: 830px;
+    background: url(../img/adv_1_06.png) no-repeat center center;
+}
+/*banner样式部分结束*/
+/*achievement部分开始*/
+.achievement {
+    width: 1197px;
+    padding: 72px 33px;
+    height: 112px;
+    background-color: #fff;
+    left: 50%;
+    margin-left: -630px;
+    position: absolute;
+    top: 840px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5); /*20像素的影音 黑色 透明度0.5;*/
+}
+
+    .achievement ul li {
+        float: left;
+        text-align: center;
+        margin-left: 72px;
+        position: relative;
+    }
+
+    .achievement .line {
+        width: 1px;
+        height: 80px;
+        background-color: #999;
+        margin-top: 20px;
+    }
+
+    .achievement li.first_child {
+        margin-left: 0px;
+    }
+
+    .achievement .ach_num {
+        font-size: 60px;
+        color: #d71718;
+    }
+
+    .achievement .ach_title {
+        font-size: 18px;
+        color: #777;
+    }
+
+    .achievement i {
+        font-size: 36px;
+        color: #d71718;
+        font-style: normal;
+        position: absolute;
+        top: -28px;
+        right: -18px;
+    }
+/*achievement部分结束*/
+
+
+
+/* our products部分开始 */
+.our_product {
+    margin-top: 200px;
+    height: 750px;
+    position: relative;
+}
+
+.our_product_hd,
+.solution_hd,
+.Enterprise_hd {
+    height: 111px;
+    text-align: center;
+}
+
+    .our_product_hd h3,
+    .solution_hd h3,
+    .Enterprise_hd h3 {
+        font-size: 30px;
+        font-weight: 700px;
+    }
+
+    .our_product_hd .hr,
+    .solution_hd .hr,
+    .Enterprise_hd .hr {
+        width: 42px;
+        height: 2px;
+        background-color: #D71718;
+        position: absolute;
+        top: 43px;
+        left: 50%;
+        margin-left: -20px;
+    }
+
+    .our_product_hd p, .solution_hd p, .Enterprise_hd p {
+        margin-top: 11px;
+        font-size: 18px;
+        color: #999999;
+    }
+
+.our_product_title,
+.Enterpise_title {
+    text-align: center; /* 通常在父控件中设置子元素居中 */
+    height: 120px;
+}
+
+    .our_product_title span {
+        display: inline-block;
+        padding: 10px 20px;
+        color: #999999;
+    }
+
+    .our_product_title .second {
+        margin: 0 150px;
+    }
+
+    .our_product_title span:hover { /* 这里hover必须要接在元素后面写 */
+        background-color: #D71718;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+
+.our_product_list {
+    height: 530px;
+}
+
+.our_product_list_ico {
+    height: 230px;
+    text-align: center;
+}
+
+    .our_product_list_ico span {
+        display: inline-block;
+        width: 172px;
+        height: 162px;
+        background: url(../img/sprite.png) no-repeat;
+        margin-right: 120px;
+    }
+
+    .our_product_list_ico .icon2 {
+        background-position: 0 -171px;
+    }
+
+    .our_product_list_ico .icon3 {
+        background-position: 0 -338px;
+    }
+
+    .our_product_list_ico .icon4 {
+        width: 161px;
+        height: 160px;
+        background: url(../img/icon_03.png) no-repeat;
+        margin-right: 0;
+    }
+
+.our_product_list_item ul li {
+    float: left;
+    text-align: center;
+    margin-left: 35px;
+    margin-right: 40px;
+}
+
+.our_product_list_item ul h4 {
+    font-size: 18x;
+    font-weight: 700px;
+    color: #777777;
+    height: 48px;
+}
+
+.our_product_list_item ul .title_con {
+    display: block;
+    font-size: 14px;
+    width: 227px;
+    height: 103px;
+    color: #999999;
+    line-height: 21px;
+    text-indent: 24px;
+    overflow: hidden;
+}
+
+.our_product_list_item .title_last {
+    margin-right: 0;
+    margin-left: -15px;
+}
+
+.our_product_list_item .more {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    color: #666;
+}
+
+    .our_product_list_item .more:hover {
+        background-color: #D71718;
+        color: #FFFFFF;
+    }
+
+.solution {
+    position: relative;
+    height: 600px;
+}
+
+    .solution .solution_title {
+        height: 92px;
+        text-align: center;
+    }
+
+    .solution .title_detail {
+        display: inline-block;
+        margin-right: 64px;
+        margin-left: 64px;
+        width: 84px;
+        height: 42px;
+        line-height: 42px;
+        font-size: 20px;
+        color: #999999;
+    }
+
+        .solution .title_detail:hover {
+            background: #D71718;
+            color: #FFFFFF;
+        }
+
+.solution_list {
+    height: 267px;
+}
+
+.solution .solution_list ul {
+    height: 200px;
+    position: relative;
+}
+
+.solution ul li {
+    float: left;
+    margin-right: 15px;
+}
+
+    .solution ul li.last_child {
+        margin-right: 0px
+    }
+
+    .solution ul li a {
+        display: block;
+        color: #777777;
+        text-align: center;
+    }
+
+        .solution ul li a:hover {
+            color: #D71718
+        }
+
+.solution .solution_list_title {
+    margin-top: 15px;
+}
+
+.solution_list .arrow {
+    text-align: center;
+}
+/* 设置加号和框框 */
+.solution ul li span {
+    font-family: '宋体';
+    position: absolute;
+    border: 1px solid #fff;
+    width: 245px;
+    height: 152px;
+    top: 20px;
+    left: 20px;
+    text-align: center;
+    line-height: 152px;
+    font-size: 48px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.solution .arrow span:hover {
+    background: #D71718;
+    color: #FFFFFF;
+}
+
+.solution .arrow span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    line-height: 30px;
+    color: #999999;
+}
+
+.solution .arrow_left {
+    margin-right: 45px;
+}
+
+.solution .arrow_right {
+    margin-left: 45px;
+}
+/* our products部分结束 */
+
+
+/* Enterprise 部分开始 */
+.Enterprise {
+    height: 636px;
+    position: relative;
+    background-color: cornflowerblue;
+}
+
+.Enterpise_title .middle_child {
+    margin: 0 100px;
+}
+
+.Enterpise_title span {
+    border: #666 1px solid;
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #666;
+}
+
+    .Enterpise_title span:hover { /* 这里hover必须要接在元素后面写 */
+        background-color: #D71718;
+        color: #FFFFFF;
+        cursor: pointer;
+        border: #D71718 1px solid;
+    }
+
+.Enterprise_list .Enterprise_list_left {
+    height: 405px;
+    width: 570px;
+    background-color: coral;
+    float: left;
+}
+
+.Enterprise_list .Enterprise_list_right {
+    height: 405px;
+    width: 570px;
+    background-color: seagreen;
+    float: right;
+}
+
+.Enterprise_list_title {
+    margin-top: 15px;
+}
+
+    .Enterprise_list_title a {
+        display: block;
+        color: #666;
+        white-space: nowrap; /* 规定段落中的文本不进行换行 */
+        overflow: hidden; /* 设置内容溢出时的处理方案 */
+        text-overflow: ellipsis; /* 溢出文本显示“...” */
+    }
+
+.Enterprise_list_subject {
+    margin-top: 10px;
+    position: relative;
+}
+
+    .Enterprise_list_subject .time {
+        display: inline-block;
+        width: 47px;
+        font-size: 18px;
+        margin-right: 10px;
+    }
+
+        .Enterprise_list_subject .time i {
+            font-style: normal;
+            font-size: 16px;
+            color: #666666;
+        }
+
+    .Enterprise_list_subject .line {
+        position: absolute;
+        width: 1px;
+        height: 30px;
+        background-color: #2E8B57;
+        top: 10px;
+    }
+
+    .Enterprise_list_subject .desc {
+        display: inline-block;
+        font-size: 14px;
+        width: 490px;
+        line-height: 24px;
+        color: #777777;
+        margin-left: 10px;
+    }
+/* Enterprise 部分结束 */
